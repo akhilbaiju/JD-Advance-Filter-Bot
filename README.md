@@ -53,17 +53,16 @@ OR
 
 * ->__Mongo DB URL Obtained From [Mongo DB](http://www.mongodb.com)__
 
-
-## Deploy
-
-<details><summary>Deploy To Heroku</summary>
-<p>
-<br>
-<a href="https://heroku.com/deploy?template=https://github.com/akhilbaiju/JD-Advance-Filter-Bot">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>
+ <p align="right">
+  <a href="https://www.t.me/thejdbot">
+    <img src="https://i.ibb.co/P4B0NFJ/masterimage.gif" alt="logp" border="0">
+  </a>
 </p>
-</details>
+
+
+## Deploy Button Here
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/akhilbaiju/JD-Advance-Filter-Bot)
 
 
 ##  #Production Of Honey Bee Industries
