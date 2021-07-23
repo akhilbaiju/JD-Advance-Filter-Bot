@@ -203,7 +203,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"""<i>😉 വേണ്ട file ക്ലിക്ക് ചെയ്ത ശേഷം START ക്ലിക്ക് ചെയുക \n Choose the File you needed and Click on START 😎 \n Found {(len_results)} Results For Your Search :</i> <b>{query}</b>\n\n <b><i>⭐️ @honeybeemovies $ @MalluFlix ⭐️</i></b>""",
+                text=f"""<i><b>😉 വേണ്ട file ക്ലിക്ക് ചെയ്ത ശേഷം START ക്ലിക്ക് ചെയുക / Choose the File you needed and Click on START 😎</b> \n Found {(len_results)} Results For Your Search :</i> <b>{query}</b>\n\n <b><i>⭐️ @honeybeemovies $ @MalluFlix ⭐️</i></b>""",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 disable_web_page_preview=True,
