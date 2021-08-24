@@ -1,10 +1,10 @@
 class Translation(object):
     
-    START_TEXT = """<b>Hey {}!!</b>
-<i>Am Just A Advance Auto Filter Bot....😉
-Works only for @HoneyBeeMovies 
+    START_TEXT = """<i><b>Hey {}!!</b>
+Am JD Just An Advance Auto Filter Bot....😉
+Developed by <b><a href="https://t.me/akhilbaiju">Unni</a></b>
 For More Details Click Help Button Below..
-</i>"""    
+</i>""" 
     
     HELP_TEXT = """
 <b><i>Need any Help!?</i></b>
@@ -16,10 +16,14 @@ For More Details Click Help Button Below..
 
 """
     
-    ABOUT_TEXT = """<b>➥ Name</b> : <code> John Durai</code>
+    ABOUT_TEXT = """<b>➥ Name</b>        : <code> John Durai</code>
     
-<b>➥ Nickname</b> : <b><i><a href="https://t.me/thejdbot">J.D</a></i></b>
+<b>➥ Nickname</b> :    <b><i><a href="https://t.me/thejdbot">J.D</a></i></b>
 
-<b>➥ Channel</b> : <b><i><a href="https://t.me/honeybeemovies">Honey Bee Movies</a></i></b>
+<b>➥ Creator</b>      :    <b><i><a href="https://t.me/akhilbaiju">Unni</a></i></b>
+
+<b>➥ Language</b>  : <code> Python 3</code>
+
+<b>➥ Library</b>        :    <b><i><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0</a></i></b>
 
 """
