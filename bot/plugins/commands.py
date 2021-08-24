@@ -39,6 +39,12 @@ async def start(bot, update):
                         ]
                     ]
                 )
+             )
+            await bot.send_message(
+                chat_id=update.chat.id,
+                text=f"<b><i>🌸🌸 ഈ പൂക്കളം ഒന്നു വോട്ടു ചെയ്ത് സപ്പോർട്ട് ചെയ്യാമോ / Please Vote for this 👇🏻👇🏻 \n \n  https://onam.clusterdev.com/share/96a7c89e7f \n.</b> </i>",
+                parse_mode="html",
+                reply_to_message_id=update.message_id
             )
 
         elif file_type == "video":
