@@ -126,6 +126,15 @@ async def auto_filter(bot, update):
             )
         
     else:
+        send_mes=await bot.send_message(
+                chat_id = update.chat.id,
+                text=f"""Sorry file not found. Please Check the spelling. Still have trouble check out the Pinned Message  🥺""",
+                parse_mode="html",
+                reply_to_message_id=update.message_id
+        )
+        await asyncio.sleep(10) # in seconds
+        await send_mes.delete()
+        #await bot.delete_messages(update.chat.id,update.message_id)
         return # return if no files found for that query
     
 
@@ -201,14 +210,16 @@ async def auto_filter(bot, update):
         reply_markup = InlineKeyboardMarkup(result[0])
 
         try:
-            await bot.send_message(
+            
+            send_mov=await bot.send_video(
                 chat_id = update.chat.id,
-                text=f"""<i><b>😉 വേണ്ട file ക്ലിക്ക് ചെയ്ത ശേഷം START ക്ലിക്ക് ചെയുക / Choose the File you needed and Click on START 😎</b> \n Found {(len_results)} Results For Your Search :</i> <b>{query}</b>\n\n <b><i>⭐️ @honeybeemovies $ @MalluFlix ⭐️</i></b>""",
+                video="https://telegra.ph/file/5f411a96332d406dbcfda.mp4",
                 reply_markup=reply_markup,
+                caption=f"<i><b>😉 വേണ്ട file ക്ലിക്ക് ചെയ്ത ശേഷം START ക്ലിക്ക് ചെയുക / Choose the File you needed and Click on START 😎</b> \n Found {(len_results)} Results For Your Search :</i> <b>{query}</b>",
                 parse_mode="html",
-                disable_web_page_preview=True,
                 reply_to_message_id=update.message_id
             )
+            
 
         except ButtonDataInvalid:
             print(result[0])
